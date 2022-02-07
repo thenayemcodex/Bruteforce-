@@ -42,23 +42,23 @@ This script is based on python2 language. You can attack on target facebook acco
 
 <p>$ pkg install python2 -y</p>
 
-<p>$ pip install requests</p>
+<p>$ pip2 install requests</p>
 
-<p>$ pip install mechanize</p>
+<p>$ pip2 install mechanize</p>
 
-<p>$ pip install lolcat<
+<p>$ pkg install figlet -y </p>
 
 <p>$ git clone <b>https://github.com/Noob-Hacker71/Bruteforce-.git</b></p>
 
-<p>$ cd SMS_BOMB</p>
+<p>$ cd Bruteforce-</p>
 
-<p>$ python main.py</p>
+<p>$ python2 bruteforce.py</p>
 
 <P>Don't use it for any illigele perpuse.I am not responsible for your Actions 🚫</p>
 
-<p><b>Note : Amount 1 = 20, 2 = 40, 3 = 60, 4 = 80, 5 = 100</b></p>
 
-## WAITING :
+
+
 
 <div align="center">
 
@@ -68,4 +68,4 @@ This script is based on python2 language. You can attack on target facebook acco
 
 </div>
 
-<b>[Note] Allah Always Watching you</b>
+<b>[Note] Allah Is Always Watching you</b>
