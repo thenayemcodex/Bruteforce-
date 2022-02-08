@@ -33,8 +33,7 @@ This script is based on python2 language. You can attack on target facebook acco
 <br>
 
 ### Process / Installation>>>>
-
-<p><b>Python version 3.10 Required</b></p>
+'''
 
 <p>$ apt update && apt upgrade -y</p>
 
@@ -53,6 +52,9 @@ This script is based on python2 language. You can attack on target facebook acco
 <p>$ cd Bruteforce-</p>
 
 <p>$ python2 Bruteforce.py</p>
+
+
+'''
 
 <P>Don't use it for any illigele perpuse.I am not responsible for your Actions 🚫</p>
 
