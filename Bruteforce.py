@@ -152,7 +152,7 @@ def Noob():
         cps.write(victim +" [ NOOB ] "+ line + '\n')
         cps.close()
       else:
-        print( ycl+'\n[ PASSWORD WRONG ] '  +ycl + line+"\n")
+        print( ycl+'[ PASSWORD WRONG ] '  +ycl + line)
     except:
       pass
   
