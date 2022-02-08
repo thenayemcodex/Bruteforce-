@@ -52,7 +52,7 @@ This script is based on python2 language. You can attack on target facebook acco
 
 <p>$ cd Bruteforce-</p>
 
-<p>$ python2 bruteforce.py</p>
+<p>$ python2 Bruteforce.py</p>
 
 <P>Don't use it for any illigele perpuse.I am not responsible for your Actions 🚫</p>
 
