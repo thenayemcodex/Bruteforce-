@@ -1,5 +1,8 @@
 # Bruteforce-
-This script is based on python2 language. You can attack on target facebook account with your custom Wordlist. This tool is work 100%. 
+This script is based on python2 language. You can attack on target facebook account with your custom Wordlist. This tool is work 100%. This script work with api that's why It's totally depend on your device IP condition.
+Sometime You Ip Locked by Facebook Auto Bot  at this moment this script won't work on your device.
+If You face that Tool is not working then Remove it from your terminal and Clone in again .
+Happy Hacking ... :)
 
 
 <!-- HOW THIS WORK BRO🖕🖕🖕 -->
