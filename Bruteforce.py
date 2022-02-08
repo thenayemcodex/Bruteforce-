@@ -160,7 +160,7 @@ def Noob():
         okb.close()
         exit()
       else:
-        print( ycl+'[ PASSWORD WRONG ] '  +ycl + line)
+        print( ycl+'\n[ PASSWORD WRONG ] '  +ycl + line)
     except:
       pass
   
