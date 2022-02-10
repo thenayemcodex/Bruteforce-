@@ -140,7 +140,7 @@ def Noob():
         
       else:
         pass
-        #print( ycl+'\n[ PASSWORD WRONG ] '  +ycl + line+"\n")
+        print("\033[1;31m[PASSWORD WRONG] '+line+"\n")
     except:
       pass
   
